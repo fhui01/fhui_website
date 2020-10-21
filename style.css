@@ -104,12 +104,19 @@ body{position:relative; background:#e0e0e5;}
 	#mainmenubox{position:relative;}
 	.mainmenu{justify-content:flex-end;}
 	.mainmenu>li{display:flex;}
-	.mainmenu>li>ul.sub-menu{position:absolute; right:0; left:0; top:99%;}
+	.mainmenu>li>div.ful{position:absolute; right:0; left:0; top:99%; box-shadow:0 2px 10px rgba(0,0,0,0.25); background:#fff; display:none;}
 	.mainmenu>li>a{padding:15px;}
 	.mainmenu>li>a,.mainmenu>li>div>span,.mainmenu>li>div>i{font-size:90%; color:#555;}
 	.mainmenu>li>div{display:flex;}
 	.mainmenu>li>div>span{padding:15px 0 15px 15px;}
 	.mainmenu>li>div>i{padding:19px 15px 11px 5px;}
+	.mainmenu>li>a:hover,.mainmenu>li>div.parent:hover{background:#a00; color:#fff;}
+	.mainmenu>li>div.parent:hover>span,.mainmenu>li>div.parent:hover>i{color:#fff;}
+	.mainmenu>li:hover>div.ful{display:block;}
+	.mainmenu>li>div.ful>div.max{display:flex; flex-wrap:nowrap; justify-content:center; align-items:flex-end; padding:30px 0;}
+	.mainmenu .menu-img{width:45%; margin-right:5%;}
+	.mainmenu .menu-img p{text-align:right; font-size:200%; font-weight:700; letter-spacing:-0.1em; line-height:1em; color:#ccc; margin-bottom:5px;}
+	.mainmenu .menu-img img{max-width:350px; height:auto; box-shadow:0 0 10px rgba(0,0,0,0.25); margin-left:auto;}
 	}
 
 

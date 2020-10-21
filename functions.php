@@ -80,7 +80,7 @@ remove_filter('oembed_dataparse','wp_filter_oembed_result',10);
 remove_action('wp_head','wp_oembed_add_discovery_links');
 remove_action('wp_head','wp_oembed_add_host_js');
 
-
+add_action( 'admin_init', 'my_add_meta_box' );
 
 
 
