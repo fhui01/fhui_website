@@ -100,9 +100,16 @@ body{position:relative; background:#e0e0e5;}
 	#searchfrm{position:absolute; top:100%; right:0; box-shadow:0 0 10px rgba(0,0,0,0.15); display:none;}
 	#searchbig:hover i.fa-search{background:#a00; color:#fff;}
 	#searchtxt{text-align:right; width:200px;}
-	.mainmenu>li>ul.sub-menu{display:none;}
-	.mainmenu>li>a{padding:15px; border:1px solid #aaa;}
+	#mainlogo{padding:15px 0;}
+	#mainmenubox{position:relative;}
+	.mainmenu{justify-content:flex-end;}
+	.mainmenu>li{display:flex;}
+	.mainmenu>li>ul.sub-menu{position:absolute; right:0; left:0; top:99%;}
+	.mainmenu>li>a{padding:15px;}
+	.mainmenu>li>a,.mainmenu>li>div>span,.mainmenu>li>div>i{font-size:90%; color:#555;}
+	.mainmenu>li>div{display:flex;}
 	.mainmenu>li>div>span{padding:15px 0 15px 15px;}
+	.mainmenu>li>div>i{padding:19px 15px 11px 5px;}
 	}
 
 

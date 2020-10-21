@@ -62,7 +62,6 @@ if(has_nav_menu('top')){
 					<a href="dalam.php" class="logo mob tema" id="mobtema"><img src="<?php echo get_template_directory_uri();?>/img/tema.jpg" alt="Dirgahayu Republik Indonesia"></a>
 					<i class="fas fa-search ico on"></i>
 				</div>
-				<div>test</div>div>
 			</div>
 			
 			<nav id="mainmenubox" role="navigation">

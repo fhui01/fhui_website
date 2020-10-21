@@ -15,6 +15,11 @@ $(document).ready(function(){
 		$('#head').toggleClass('menuon');
 	});
 
+	$('.mainmenu li.menu-item-has-children').each(function(){
+		var sub=$(this).children('.sub-menu');
+		sub.wrap('<div class="max"></div>');
+	});
+
 	$('.menu-item-has-children').each(function(){
 		var lnk=$(this).children('a');
 		var txt=lnk.text();
