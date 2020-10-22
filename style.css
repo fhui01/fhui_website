@@ -66,7 +66,8 @@ body{position:relative; background:#e0e0e5;}
 #socbar li#lang a span{display:flex; align-items:center; padding:0 5px; font-size:70%; font-weight:700; text-transform:uppercase; background:#fd0; color:#222;}
 #socbar li#lang a:hover span{background:#222; color:#fd0;}
 
-#mainlogo .max{display:flex; flex-wrap:nowrap; justify-content:space-between;}
+#mainlogo .max{display:flex; flex-wrap:nowrap; justify-content:space-between; align-items:stretch;}
+#mainlogo .max a{display:flex; align-items:center;}
 #mainlogo .tema{margin-left:auto;}
 
 
@@ -86,12 +87,13 @@ body{position:relative; background:#e0e0e5;}
 	#topmenu>li.menu-item-has-children{cursor:pointer;}
 	#topmenu>li>a,#topmenu>li>div>span,#topmenu>li>div>i{flex-grow:1; display:flex; align-items:center; font-size:80%; color:#555;}
 	#topmenu>li>a{padding:0 10px;}
-	#topmenu>li>a:hover{background:#a00; color:#fff;}
+	#topmenu>li:hover{background:#a00; color:#fff;}
+	#topmenu>li:hover>a{color:#fff;}
 	#topmenu>li>div.parent{display:flex; justify-content:center; align-items:stretch;}
 	#topmenu>li>div>span{padding:0 0 0 10px;}
 	#topmenu>li>div>i{padding:0 10px 0 5px;}
 	#topmenu>li.menu-item-has-children:hover>div>span,#topmenu>li.menu-item-has-children:hover>div>i{background:#a00; color:#fff;}
-	#topmenu .sub-menu{position:absolute; top:99%; right:0; left:-100px; box-shadow:0 2px 10px rgba(0,0,0,0.25); display:none;}
+	#topmenu .sub-menu{position:absolute; top:99%; right:0; left:-120px; box-shadow:0 2px 10px rgba(0,0,0,0.25); display:none;}
 	#topmenu li.menu-item-has-children:hover>ul.sub-menu{display:block;}
 	#topmenu .sub-menu>li>a{display:block; padding:5px 15px; font-size:85%; background:#fff; color:#555; text-align:right; border-bottom:1px dotted #ccc;}
 	#topmenu .sub-menu>li>a:hover{background:#a00; color:#fff;}
@@ -100,18 +102,20 @@ body{position:relative; background:#e0e0e5;}
 	#searchfrm{position:absolute; top:100%; right:0; box-shadow:0 0 10px rgba(0,0,0,0.15); display:none;}
 	#searchbig:hover i.fa-search{background:#a00; color:#fff;}
 	#searchtxt{text-align:right; width:200px;}
-	#mainlogo{padding:15px 0;}
+	#mainlogo .max a{padding:10px 0;}
+	#mainlogo .max a.mob{display:none;}
+	#mainlogo .max a img{height:70px;}
 	#mainmenubox{position:relative;}
 	.mainmenu{justify-content:flex-end;}
 	.mainmenu>li{display:flex;}
 	.mainmenu>li>div.ful{position:absolute; right:0; left:0; top:99%; box-shadow:0 2px 10px rgba(0,0,0,0.25); background:#fff; display:none;}
 	.mainmenu>li>a{padding:15px;}
-	.mainmenu>li>a,.mainmenu>li>div>span,.mainmenu>li>div>i{font-size:90%; color:#555;}
+	.mainmenu>li>a,.mainmenu>li>div>span,.mainmenu>li>div>i{font-size:90%; color:#555; cursor:pointer;}
 	.mainmenu>li>div{display:flex;}
 	.mainmenu>li>div>span{padding:15px 0 15px 15px;}
 	.mainmenu>li>div>i{padding:19px 15px 11px 5px;}
-	.mainmenu>li>a:hover,.mainmenu>li>div.parent:hover{background:#a00; color:#fff;}
-	.mainmenu>li>div.parent:hover>span,.mainmenu>li>div.parent:hover>i{color:#fff;}
+	.mainmenu>li:hover{background:#a00;}
+	.mainmenu>li:hover>a,.mainmenu>li:hover>div.parent>span,.mainmenu>li:hover>div.parent>i{color:#fff;}
 	.mainmenu>li:hover>div.ful{display:block;}
 	.mainmenu>li>div.ful>div.max{display:flex; flex-wrap:nowrap; justify-content:center; align-items:flex-end; padding:30px 0;}
 	.mainmenu .menu-img{width:45%; margin-right:5%;}
@@ -126,5 +130,21 @@ body{position:relative; background:#e0e0e5;}
 	/* SMALL */
 	.mob{display:block;}
 	.big{display:none;}
+	#mainlogo{box-shadow:0 2px 10px rgba(0,0,0,0.25); position:fixed; top:0; right:0; left:0; background:#fff; z-index:1000;}
+	#mainlogo .max i{display:flex; align-items:center; cursor:pointer; color:#777;}
+	#mainlogo .max .logo,#mainlogo .max .tema{margin:auto; padding:5px;}
+	#mainlogo .max a.big{display:none;}
+	#mainlogo .max a img{height:40px;}
+	#topbar{padding-top:60px;}
+	#socbar{padding:15px 0;}
+	#socbar li.soc a{border-bottom:1px solid #ddd; border-top:1px solid #ddd;}
+	#socbar li.soc:nth-child(4) a{border-right:1px solid #ddd;}
+	#socbar li#lang{margin-left:auto;}
+	#searchbig{position:fixed; top:50px; right:0; left:0; box-shadow:0 2px 10px rgba(0,0,0,0.25);}
+	#searchbig i{display:none;}
+	#searchfrm{display:none;}
+	#searchtxt{text-align:center;}
+	.menu .sub-menu{display:none;}
+	#topmenu>li>a{display:block; padding:5px 0;}
 }
 

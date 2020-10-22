@@ -15,6 +15,17 @@
 	<header id="mainhead" role="banner">
 		<div id="headbg">
 
+			<div id="mainlogo">
+				<div class="max">
+					<i class="fas fa-bars ico on"></i>
+					<a href="<?php echo get_home_url();?>" class="logo big" id="biglogo"><img src="<?php echo get_template_directory_uri();?>/img/fhui.jpg" alt="Fakultas Hukum Universitas Indonesia"></a>
+					<a href="<?php echo get_home_url();?>" class="logo mob" id="moblogo"><img src="<?php echo get_template_directory_uri();?>/img/fhui-small.jpg" alt="Fakultas Hukum Universitas Indonesia"></a>
+					<a href="<?php echo get_home_url();?>/dies-natalis-96/" class="logo big tema" id="bigtema"><img src="<?php echo get_template_directory_uri();?>/img/tema.jpg" alt="Dirgahayu Republik Indonesia"></a>
+					<a href="<?php echo get_home_url();?>/dies-natalis-96/" class="logo mob tema" id="mobtema"><img src="<?php echo get_template_directory_uri();?>/img/tema.jpg" alt="Dirgahayu Republik Indonesia"></a>
+					<i class="fas fa-search ico on"></i>
+				</div>
+			</div>
+			
 			<div id="topbar">
 				<div class="max flx">
 					<div id="socbar">
@@ -53,17 +64,6 @@ if(has_nav_menu('top')){
 				</div>
 			</div>
 
-			<div id="mainlogo">
-				<div class="max">
-					<i class="fas fa-bars ico on"></i>
-					<a href="index.php" class="logo big" id="biglogo"><img src="<?php echo get_template_directory_uri();?>/img/fhui.jpg" alt="Fakultas Hukum Universitas Indonesia"></a>
-					<a href="index.php" class="logo mob" id="moblogo"><img src="<?php echo get_template_directory_uri();?>/img/fhui-small.jpg" alt="Fakultas Hukum Universitas Indonesia"></a>
-					<a href="dalam.php" class="logo big tema" id="bigtema"><img src="<?php echo get_template_directory_uri();?>/img/tema.jpg" alt="Dirgahayu Republik Indonesia"></a>
-					<a href="dalam.php" class="logo mob tema" id="mobtema"><img src="<?php echo get_template_directory_uri();?>/img/tema.jpg" alt="Dirgahayu Republik Indonesia"></a>
-					<i class="fas fa-search ico on"></i>
-				</div>
-			</div>
-			
 			<nav id="mainmenubox" role="navigation">
 				<ul class="max menu mainmenu">
 <?php
